@@ -1,25 +1,32 @@
 
 html {
+  font-family: helvetica, san-seriff;
   font-size: 18px;
-  line-height: 1.4;
+  background-color: white;
+
 }
 
 
 /* Body */
 
 body {
-  font-family: helvetica;
-  with: 100%;
+  line-height: 1.4;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 /* Main container */
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 960px;;
+
+
+  margin: auto;
+
+  max-width: 960px;;
 }
 
 /* Header */
@@ -29,31 +36,45 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   color: white;
   background-color: cadetblue;
   width: 100%;
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+
+
 }
 
 .header-items {
   display: flex;
-
-  align-items: flex-start;
-  justify-content: center;
   align-items: center;
+}
 
-
+.header-items img {
+  height: 1.5rem;
+  padding-right: 1rem;
 }
 
 nav {
 
   text-align: right;
-  justify-content: center;
-  align-items: center;
-}
 
-.menu {
-  justify-content: center;
   align-items: center;
+  background-color: cadetblue;
+  width: 100%;
 
 }
 
@@ -63,9 +84,19 @@ nav ul {
 
 }
 
-.header-nav {
+nav li {
+  justify-content: space-between;
+  padding-right: 2rem;
 
 }
+
+.menu {
+  justify-content: space-between;
+  text-align: right;
+
+}
+
+
 
 
 /* Mobile Menu */
@@ -77,21 +108,26 @@ nav ul {
 /* Main Content */
 
 .main-content {
-  background-image: url("../images/glasses-bg.png");
+
   height: 30rem;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  flex-direction: row-reverse;
+}
+
+.main-banner {
+  align-items: flex-end;
+
+  margin-top: 10rem;
+
 }
 
 .main-copy {
-  align-items: flex-end;
-  align text-align: flex-end;
   background-color: white;
   font-weight: bold;
   color: black;
+  margin-top: 10rem;
+  padding: 1.5rem 5rem 1.5rem 5rem;
 }
 
 /* Products */
@@ -99,16 +135,26 @@ nav ul {
 .business-products {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+
 }
 
 .product {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+
+.product img {
+  width: 3.5rem;
+  height:
+}
+
+.product span {
+  text-align: center;
 }
 
 /* Business Info */
@@ -125,6 +171,18 @@ nav ul {
   color: white;
   font-weight: bold;
   font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+
+}
+
+.info {
+  width: 35%;
+  padding: 3rem 2.5% 5rem 2.5%;
+}
+
+.info p {
+  padding-top: 1rem;
 }
 
 /* Footer */
@@ -132,16 +190,17 @@ nav ul {
 footer {
   display: flex;
   align-items: flex-start;
-  background-color: cadetblue;
-
+  background-color: azure;
   align-items: center;
-  width: 100%;
-
+  padding: 4rem;
 }
 
 footer .copyright {
-
   align-items: center;
 
+}
 
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
 }
