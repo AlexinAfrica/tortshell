@@ -1,0 +1,147 @@
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+/* Body */
+
+body {
+  font-family: helvetica;
+  with: 100%;
+}
+
+/* Main container */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 960px;;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  background-color: cadetblue;
+  width: 100%;
+}
+
+.header-items {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+nav {
+
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  justify-content: center;
+  align-items: center;
+
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.header-nav {
+
+}
+
+
+/* Mobile Menu */
+
+.mobile-menu {
+  display: none;
+}
+
+/* Main Content */
+
+.main-content {
+  background-image: url("../images/glasses-bg.png");
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-copy {
+  align-items: flex-end;
+  align text-align: flex-end;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
+
+/* Products */
+
+.business-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Business Info */
+
+.business-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.business-info .title {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  background-color: cadetblue;
+
+  align-items: center;
+  width: 100%;
+
+}
+
+footer .copyright {
+
+  align-items: center;
+
+
+}
