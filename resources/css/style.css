@@ -60,6 +60,9 @@ header {
   header {
     background-position: 20%;
   }
+  .header-items img {
+
+  }
 
 }
 
@@ -99,6 +102,7 @@ header {
 .header-items img {
   height: 1.5rem;
   padding-right: 1rem;
+  padding-left: 2rem;
 }
 
 nav {
@@ -152,6 +156,8 @@ nav li {
   .menu {
     display: none;
   }
+
+
 }
 
 /* Main Content */
@@ -297,6 +303,7 @@ nav li {
   flex-direction: row;
   justify-content: space-between;
 
+
 }
 
 .business-info .title {
@@ -305,30 +312,40 @@ nav li {
   font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem 1.25rem;
-  width: 10rem;
+  max-width: 10rem;
 
 }
 
 @media only screen and (max-width: 480px) {
   .business-info {
     padding-top: 0;
+    flex-direction: column;
+  }
+  .business-info .title {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+
+
   }
 }
 
 .info {
-  width: 35%;
+  max-width: 35%;
   padding: 3rem 2.5% 5rem 2.5%;
 }
 
 @media only screen and (max-width: 480px) {
   .info {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
+    max-width: 100%;
+
+
   }
 }
 
 .info p {
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 @media only screen and (max-width: 480px) {
