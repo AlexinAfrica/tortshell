@@ -67,9 +67,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
+  padding: 1rem 0;
   margin-top: 1rem;
   max-width: 100%;
 
@@ -89,7 +87,7 @@ header {
     display: none;
   }
   .header-nav {
-    width: 480px;
+    max-width: 100%;
   }
 }
 
@@ -117,12 +115,15 @@ nav {
 nav ul {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 1rem;
 
 }
 
 nav li {
   justify-content: space-between;
-  padding-right: 2rem;
+
+  display: inline;
+  padding: 0 1rem;
 
 }
 
@@ -145,6 +146,7 @@ nav li {
 @media only screen and (max-width: 480px) {
   .mobile-menu {
     display: block;
+    max-width: 700px;
   }
 
   .menu {
